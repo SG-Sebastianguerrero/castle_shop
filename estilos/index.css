@@ -1,0 +1,64 @@
+:root{
+  --black:  #171717;
+  --green:  #5E8C65;
+  --grey:   #4F4F4F;
+  --white:  #FFFFFF;
+  --pink:   #DDA197;
+  --black2: #191919;
+}
+
+
+.barra_menu{
+  background-color: var(--black2);
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  padding: 0%;
+  margin: 0%;
+  display: flex;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.barra-logo{
+  width: 15%;
+  padding-right: 0px;
+  padding-left: 0px;
+
+}
+
+.body{
+  margin: 0px;
+  padding: 0px;
+  /*border: 5px solid red;*/
+
+}
+.barra-textos{
+  display: flex;
+  color: var(--grey);
+  white-space: break-spaces;
+}
+.link{
+  font-family: 'Playfair',Display;
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: none;
+  font-style: italic; cursiva
+  height: inherit;
+  color: var(--white);
+}
+
+.barra-textos{
+    list-style: none;
+}
+
+.icons-lupa, .icons-usuario, .icons-carrito{
+  width: 15px;
+  margin-right:  10px;
+  margin-left:  10px;
+}
+.barra-icons{
+    padding: 10px;
+}
