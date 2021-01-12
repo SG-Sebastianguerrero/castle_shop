@@ -32,9 +32,8 @@
 .body{
   margin: 0px;
   padding: 0px;
-  /*border: 5px solid red;*/
-
 }
+
 .barra-textos{
   display: flex;
   color: var(--grey);
@@ -61,4 +60,59 @@
 }
 .barra-icons{
     padding: 10px;
+}
+.hero-imagen{
+  padding-top: 80px;
+  width: 1000px;
+  display: flex;
+  position: absolute;
+}
+.hero-texto{
+  margin: 10px 0px 10px 0px;
+  position: relative;
+  padding-top: 80px;
+  left: 650px;
+}
+.hero-texto h5{
+  letter-spacing: 0.9em;
+  transform: rotate(-90deg);
+  left: -125px;
+  text-align: justify;
+  margin-top: 206px;
+  position: absolute;
+}
+
+.hero-cuadrotexto{
+  margin-top: 120px;
+  border-left: 2px solid var(--grey);
+  padding-left: 15px;
+}
+
+.hero-cuadrotexto h3{
+  margin: 0px 0px 0px 0px;
+  font-family: 'Playfair',Display;
+  font-weight: bold;
+  font-size: 24px;
+  text-decoration: none;
+  font-style: italic; cursiva ;
+}
+
+.hero-cuadrotexto h1{
+    margin: 0px 0px 0px 0px;
+  font-family: 'Roboto',sans-serif;
+  font-weight: bold;
+  font-size: 60px;
+}
+.shop_now{
+padding: 5px 15px;
+border-radius: 15px;
+background-color: var(--black);
+color: white;
+}
+
+
+.hero{
+    height: 525px;
+    background-color: var(--pink);
+    display: flex;
 }
