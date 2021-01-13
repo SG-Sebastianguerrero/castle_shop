@@ -1,6 +1,6 @@
 :root{
   --black:  #171717;
-  --green:  #5E8C65;
+  --green:  #64986a;
   --grey:   #4F4F4F;
   --white:  #FFFFFF;
   --pink:   #DDA197;
@@ -9,6 +9,7 @@
 
 
 .barra_menu{
+  z-index: 100;
   background-color: var(--black2);
   position: fixed;
   height: 80px;
@@ -70,20 +71,23 @@
 .hero-texto{
   margin: 10px 0px 10px 0px;
   position: relative;
-  padding-top: 80px;
+  padding-top: 200px;
   left: 650px;
 }
 .hero-texto h5{
-  letter-spacing: 0.9em;
+  font-family: 'Roboto',sans-serif;
+  font-weight: bold;
+  margin: 0px 0px 0px 0px;
+  font-size: 8px;
+  letter-spacing: 1em;
   transform: rotate(-90deg);
-  left: -125px;
+  left: -90px;
   text-align: justify;
-  margin-top: 206px;
+  margin-top: 77px;
   position: absolute;
 }
 
 .hero-cuadrotexto{
-  margin-top: 120px;
   border-left: 2px solid var(--grey);
   padding-left: 15px;
 }
@@ -94,20 +98,24 @@
   font-weight: bold;
   font-size: 24px;
   text-decoration: none;
-  font-style: italic; cursiva ;
+  font-style: italic;
 }
 
 .hero-cuadrotexto h1{
-    margin: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
   font-family: 'Roboto',sans-serif;
   font-weight: bold;
   font-size: 60px;
 }
 .shop_now{
-padding: 5px 15px;
-border-radius: 15px;
-background-color: var(--black);
-color: white;
+  margin: 20px;
+  border-width: 0px;
+  font-family: 'Playfair',Display;
+  padding: 8px 20px;
+  border-radius: 15px;
+  background-color: black;
+  color: white;
+  font-style: italic;
 }
 
 
@@ -115,4 +123,66 @@ color: white;
     height: 525px;
     background-color: var(--pink);
     display: flex;
+}
+
+.contenedor-1{
+  padding-top: 80px;
+  padding-left: 200px;
+  padding-right: 200px;
+  display: flex;
+  position: absolute;
+}
+.creams-texto{
+   padding-top: 55px;
+   padding-right: 40px;
+    width: 170px;
+}
+.creams-texto h1, h2,h3,h4,h5{
+  margin: 0px 0px 0px 0px;
+}
+.creams-texto h1{
+  font-family: 'Playfair',Display;
+  font-weight: bold;
+  text-decoration: none;
+  font-style: italic;
+  font-size: 50px;
+}
+
+.creams-texto h5{
+    font-family: 'Playfair',Display;
+    font-size: 14px;
+}
+
+.creams-oferta-imagen{
+  width: 200px;
+}
+
+.shop_now-creams{
+  margin-top: 20px;
+  border-width: 0px;
+  font-family: 'Playfair',Display;
+  padding: 8px 20px;
+  border-radius: 15px;
+  background-color: black;
+  color: white;
+  font-style: italic;
+}
+.creams-producto-1{
+  padding-top: 70px;
+  padding-left: 30px;
+}
+.creams-producto-2{
+  margin: 0px;
+  padding-top: 325px;
+  padding-left: 380px;;
+  position: relative;
+}
+.creams-oferta-producto2{
+      width: 230px;
+}
+.creams-oferta-producto1{
+  width: 300px;
+}
+.Creams{
+
 }
