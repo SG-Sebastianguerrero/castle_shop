@@ -8,7 +8,7 @@
 }
 
 
-.barra_menu{
+.menu_bar{
   z-index: 100;
   background-color: var(--black2);
   position: fixed;
@@ -23,7 +23,7 @@
 
 }
 
-.barra-logo{
+.bar-logo{
   width: 15%;
   padding-right: 0px;
   padding-left: 0px;
@@ -35,7 +35,7 @@
   padding: 0px;
 }
 
-.barra-textos{
+.bar-text{
   display: flex;
   color: var(--grey);
   white-space: break-spaces;
@@ -50,31 +50,31 @@
   color: var(--white);
 }
 
-.barra-textos{
+.bar-text{
     list-style: none;
 }
 
-.icons-lupa, .icons-usuario, .icons-carrito{
+.icons-search, .icons-user, .icons-shoppingcar{
   width: 15px;
   margin-right:  10px;
   margin-left:  10px;
 }
-.barra-icons{
+.bar-icons{
     padding: 10px;
 }
-.hero-imagen{
+.hero-image{
   padding-top: 80px;
   width: 1000px;
   display: flex;
   position: absolute;
 }
-.hero-texto{
+.hero-text{
   margin: 10px 0px 10px 0px;
   position: relative;
   padding-top: 200px;
   left: 650px;
 }
-.hero-texto h5{
+.hero-text h5{
   font-family: 'Roboto',sans-serif;
   font-weight: bold;
   margin: 0px 0px 0px 0px;
@@ -87,12 +87,12 @@
   position: absolute;
 }
 
-.hero-cuadrotexto{
+.hero-text2{
   border-left: 2px solid var(--grey);
   padding-left: 15px;
 }
 
-.hero-cuadrotexto h3{
+.hero-text2 h3{
   margin: 0px 0px 0px 0px;
   font-family: 'Playfair',Display;
   font-weight: bold;
@@ -101,7 +101,7 @@
   font-style: italic;
 }
 
-.hero-cuadrotexto h1{
+.hero-text2 h1{
   margin: 0px 0px 0px 0px;
   font-family: 'Roboto',sans-serif;
   font-weight: bold;
@@ -125,22 +125,22 @@
     display: flex;
 }
 
-.contenedor-1{
+.container{
   padding-top: 80px;
   padding-left: 200px;
   padding-right: 200px;
   display: flex;
   position: absolute;
 }
-.creams-texto{
+.creams-text{
    padding-top: 55px;
    padding-right: 40px;
     width: 170px;
 }
-.creams-texto h1, h2,h3,h4,h5{
+.creams-text h1, h2,h3,h4,h5{
   margin: 0px 0px 0px 0px;
 }
-.creams-texto h1{
+.creams-text h1{
   font-family: 'Playfair',Display;
   font-weight: bold;
   text-decoration: none;
@@ -148,12 +148,12 @@
   font-size: 50px;
 }
 
-.creams-texto h5{
+.creams-text h5{
     font-family: 'Playfair',Display;
     font-size: 14px;
 }
 
-.creams-oferta-imagen{
+.creams-offer-imagen{
   width: 200px;
 }
 
@@ -167,20 +167,20 @@
   color: white;
   font-style: italic;
 }
-.creams-producto-1{
+.creams-product-1{
   padding-top: 70px;
   padding-left: 30px;
 }
-.creams-producto-2{
+.creams-product-2{
   margin: 0px;
   padding-top: 325px;
   padding-left: 380px;;
   position: relative;
 }
-.creams-oferta-producto2{
+.creams-offer-product2{
       width: 230px;
 }
-.creams-oferta-producto1{
+.creams-offer-product1{
   width: 300px;
 }
 .Creams{
