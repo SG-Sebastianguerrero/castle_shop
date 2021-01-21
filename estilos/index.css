@@ -1,3 +1,8 @@
+
+*{
+  margin: 0;
+}
+
 :root{
   --black:  #171717;
   --green:  #64986a;
@@ -8,7 +13,7 @@
 }
 
 
-.menu_bar{
+.header{
   z-index: 100;
   background-color: var(--black2);
   position: fixed;
@@ -23,7 +28,7 @@
 
 }
 
-.bar-logo{
+.header_barLogo{
   width: 15%;
   padding-right: 0px;
   padding-left: 0px;
@@ -35,7 +40,7 @@
   padding: 0px;
 }
 
-.bar-text{
+.header_barText{
   display: flex;
   color: var(--grey);
   white-space: break-spaces;
@@ -50,7 +55,7 @@
   color: var(--white);
 }
 
-.bar-text{
+.header_barText{
     list-style: none;
 }
 
@@ -59,7 +64,7 @@
   margin-right:  10px;
   margin-left:  10px;
 }
-.bar-icons{
+.barIcons{
     padding: 10px;
 }
 .hero-image{
@@ -182,7 +187,4 @@
 }
 .creams-offer-product1{
   width: 300px;
-}
-.Creams{
-
 }
