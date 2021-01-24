@@ -14,14 +14,14 @@
 
 
 .header{
+  top: -10px;
   z-index: 100;
   background-color: var(--black2);
   position: fixed;
-  height: 80px;
-  width: 100%;
+  height: 85px;
+  width: 46%;
   padding: 0%;
   margin: 0%;
-  display: flex;
   align-items: center;
   display: flex;
   justify-content: space-around;
@@ -29,10 +29,9 @@
 }
 
 .header_barLogo{
-  width: 15%;
+  width: 25%;
   padding-right: 0px;
   padding-left: 0px;
-
 }
 
 .body{
@@ -40,46 +39,58 @@
   padding: 0px;
 }
 
-.header_barText{
-  display: flex;
+.header_barText ul{
   color: var(--grey);
-  white-space: break-spaces;
+  /*white-space: break-spaces;*/
 }
+
 .link{
+  padding-left: 5px;
+  padding-right: 5px;
   font-family: 'Playfair',Display;
   font-weight: bold;
   font-size: 14px;
   text-decoration: none;
-  font-style: italic; cursiva
+  font-style: italic;
   height: inherit;
   color: var(--white);
 }
 
-.header_barText{
+
+ul{
+    display: flex;
     list-style: none;
+    padding-inline-start: 0;
 }
 
-.icons-search, .icons-user, .icons-shoppingcar{
-  width: 15px;
+a{
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.icons_search, .icons_user, .icons_shoppingCar{
+  width: 35%;
   margin-right:  10px;
   margin-left:  10px;
 }
 .barIcons{
-    padding: 10px;
+display: flex;
+list-style: none;
+display: flex;
+align-items: center;
 }
-.hero-image{
-  padding-top: 80px;
-  width: 1000px;
+.hero_image{
+  padding-top: 60px;
   display: flex;
   position: absolute;
 }
-.hero-text{
+.hero_text{
   margin: 10px 0px 10px 0px;
   position: relative;
   padding-top: 200px;
   left: 650px;
 }
-.hero-text h5{
+.hero_text h5{
   font-family: 'Roboto',sans-serif;
   font-weight: bold;
   margin: 0px 0px 0px 0px;
@@ -92,12 +103,12 @@
   position: absolute;
 }
 
-.hero-text2{
+.hero_text2{
   border-left: 2px solid var(--grey);
   padding-left: 15px;
 }
 
-.hero-text2 h3{
+.hero_text2 h3{
   margin: 0px 0px 0px 0px;
   font-family: 'Playfair',Display;
   font-weight: bold;
@@ -106,13 +117,13 @@
   font-style: italic;
 }
 
-.hero-text2 h1{
+.hero_text2 h1{
   margin: 0px 0px 0px 0px;
   font-family: 'Roboto',sans-serif;
   font-weight: bold;
   font-size: 60px;
 }
-.shop_now{
+.shopNow{
   margin: 20px;
   border-width: 0px;
   font-family: 'Playfair',Display;
@@ -137,15 +148,14 @@
   display: flex;
   position: absolute;
 }
-.creams-text{
+.creams_text{
    padding-top: 55px;
-   padding-right: 40px;
-    width: 170px;
+   width: 170px;
 }
-.creams-text h1, h2,h3,h4,h5{
+.creams_text h1, h2,h3,h4,h5{
   margin: 0px 0px 0px 0px;
 }
-.creams-text h1{
+.creams_text h1{
   font-family: 'Playfair',Display;
   font-weight: bold;
   text-decoration: none;
@@ -153,16 +163,16 @@
   font-size: 50px;
 }
 
-.creams-text h5{
+.creams_text h5{
     font-family: 'Playfair',Display;
     font-size: 14px;
 }
 
-.creams-offer-imagen{
+.creams_offer_imagen{
   width: 200px;
 }
 
-.shop_now-creams{
+.shopNow_creams{
   margin-top: 20px;
   border-width: 0px;
   font-family: 'Playfair',Display;
@@ -172,19 +182,19 @@
   color: white;
   font-style: italic;
 }
-.creams-product-1{
+.creams_product_1{
   padding-top: 70px;
   padding-left: 30px;
 }
-.creams-product-2{
+.creams_product_2{
   margin: 0px;
   padding-top: 325px;
   padding-left: 380px;;
   position: relative;
 }
-.creams-offer-product2{
+.creams_offer_product2{
       width: 230px;
 }
-.creams-offer-product1{
+.creams_offer_product1{
   width: 300px;
 }
