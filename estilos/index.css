@@ -18,7 +18,7 @@
 
 
 .header{
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 85px;
   background-color: var(--black2);
@@ -33,19 +33,72 @@
 }
 
 .header_barLogo{
-  width: 15%;
+  width: 150px;
   padding-right: 0px;
   padding-left: 0px;
 }
+
+/*Animacion menu */
+.menu{
+  display: flex;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.menu .linea {
+  z-index: 1100;
+  position: absolute;
+  width: 40px;
+  height: 4px;
+  background: var(--white);
+  border-radius: 10px;
+  transition: all .2s;
+}
+
+.header .menu .linea1{top:25%;}
+.header .menu .linea2{top:50%;}
+.header .menu .linea3{top:75%;}
+
+.menu.close .linea1{
+  transform: rotate(45deg);
+  top: 50%;
+}
+.menu.close .linea2{
+  transform: rotate(45deg);
+  top: 50%;
+}
+.menu.close .linea3{
+  transform: rotate(-45deg);
+  top: 50%;
+}
+/*Fin animacion*/
 
 .body{
   margin: 0px;
   padding: 0px;
 }
 
-.header_barText ul{
-  color: var(--grey);
+.header_barText ul, li {
+  color: var(--white);
   /*white-space: break-spaces;*/
+}
+.header_barText li{
+  border-bottom: 2px solid var(--white);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.header_barText{
+z-index: 1000;
+position: absolute;
+background: var(--black2);
+width: 100%;
+height: 100vh;
+top: 0;
+display: flex;
+justify-content: center;
+-ms-align-items:center;
+align-items: center;
 }
 
 .link{
@@ -63,7 +116,6 @@
 
 ul{
     /*display: none;*/
-    display: flex;
     list-style: none;
     padding: 0;
 }
@@ -74,11 +126,13 @@ a{
   margin: 0;
   padding: 0;
 }
+
 .icons_search, .icons_user, .icons_shoppingCar{
   width: 15px;
   margin-right:  10px;
   margin-left:  10px;
 }
+
 .barIcons{
 display: flex;
 list-style: none;
@@ -91,10 +145,7 @@ align-items: center;
   /*position: absolute;*/
 }
 .hero_text{
-  /*margin: 10px 0px 10px 0px;
-  position: relative;
-  padding-top: 200px;
-  left: 650px;*/
+display: flex;
 }
 .hero_text h5{
   font-family: 'Roboto',sans-serif;
@@ -143,15 +194,12 @@ align-items: center;
 
 .hero{
     background-color: var(--pink);
-    display: flex;
+    width: 100%;
 }
 
 .container{
   padding-top: 80px;
-  padding-left: 200px;
   padding-right: 200px;
-  display: flex;
-  position: absolute;
 }
 .creams_text{
    padding-top: 55px;
@@ -194,12 +242,8 @@ align-items: center;
 .creams_product_2{
   margin: 0px;
   padding-top: 325px;
-  padding-left: 380px;;
   position: relative;
 }
 .creams_offer_product2{
       width: 230px;
-}
-.creams_offer_product1{
-  width: 300px;
 }

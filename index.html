@@ -12,8 +12,15 @@
   <title>Castle Shop</title>
 </head>
 
+<body>
 <header class="header" >
-   
+
+    <div class="menu" id="btn-menu">
+      <span class="linea linea1"></span>
+      <span class="linea linea2"></span>
+      <span class="linea linea3"></span>
+    </div>
+
    <nav class="header_barText">
       <ul>
         <li class="link" href="#Creams" > <a> Creams  </a></li>
@@ -23,8 +30,10 @@
         <li class="link" href="#More">    <a> More    </a></li>
       </ul>
    </nav>
+
    <img class="header_barLogo" src="imagenes/logo.png">
-  <ul class="barIcons">
+
+   <ul class="barIcons">
        <li>
          <a rel="icons" href="#">
            <img class="icons_search" src="imagenes/lupa.png">
@@ -42,25 +51,26 @@
            <img class="icons_shoppingCar" src="imagenes/carrito.png">
          </a>
        </li>
-  </ul>
+   </ul>
 </header>
 
-
-<body>
-
-  <section lass="hero">
+<script src="javascript/jquery-3.5.1.min.js"></script>
+<script src="javascript/menu.js"></script>
+  <section class="hero">
 
     <img class="hero_image" src="imagenes/hero.jpg">
 
     <article class="hero_textContainer">
         <div class="hero_text">
-          <h5>JUST SCROLL</h5>
+            <div class="hero_text1">
+              <h5>JUST SCROLL</h5>
+            </div>
              <div class="hero_text2">
                 <h3>Natural Beauty</h3>
                 <h1>Skin glow <br> Makeup</h1>
              </div>
-        <button type="button" class="shopNow">Shop Now</button>
         </div>
+        <button type="button" class="shopNow">Shop Now</button>
     </article>
 
   </section>
