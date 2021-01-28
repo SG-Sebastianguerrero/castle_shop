@@ -12,17 +12,19 @@
   --green:  #64986a;
   --grey:   #4F4F4F;
   --white:  #FFFFFF;
-  --pink:   #DDA197;
+/*  --pink:   #DDA197;*/
+  --pink:   #dea9a1;
+  --pink2:  #f28b8c;
   --black2: #191919;
 }
 
-
+/* INICIO barra de control header */
 .header{
   position: fixed;
   width: 100%;
   height: 85px;
   background-color: var(--black2);
-  z-index: 100;
+  z-index: 200;
   align-items: center;
   display: flex;
   justify-content: space-around;
@@ -55,9 +57,9 @@
   transition: all .2s;
 }
 
-.header .menu .linea1{top:25%;}
+.header .menu .linea1{top:30%;}
 .header .menu .linea2{top:50%;}
-.header .menu .linea3{top:75%;}
+.header .menu .linea3{top:70%;}
 
 .menu.close .linea1{
   transform: rotate(45deg);
@@ -139,11 +141,21 @@ list-style: none;
 display: flex;
 align-items: center;
 }
+/* barra de control header FIN */
+
+/* INICIO Hero para escritorio */
+
+.hero{
+display: none;
+}
+
 .hero_image{
   padding-top: 75px;
   display: flex;
+  width: -webkit-fill-available;
   /*position: absolute;*/
 }
+
 .hero_text{
 display: flex;
 }
@@ -180,6 +192,7 @@ display: flex;
   font-weight: bold;
   font-size: 60px;
 }
+
 .shopNow{
   margin: 20px;
   border-width: 0px;
@@ -201,6 +214,77 @@ display: flex;
   padding-top: 80px;
   padding-right: 200px;
 }
+
+/* Hero para escritorio FIN*/
+
+/* INICIO hero para mobil 360x640*/
+
+.hero2_textContainer{
+  display: flex;
+  position: relative;
+  z-index: 100;
+}
+
+.hero2_text h5{
+  width: 40px;
+  font-family: 'Roboto',sans-serif;
+  font-weight: bold;
+  margin: 0;
+  font-size: 4px;
+  letter-spacing: 1em;
+  transform: rotate(-90deg);
+}
+
+.hero2_text{
+  display: flex;
+  align-items: center;
+}
+.hero2_text2{
+  border-left: 2px solid var(--grey);
+  padding-left: 15px;
+}
+
+.hero2_text2 h3{
+  margin: 0px 0px 0px 0px;
+  font-family: 'Playfair',Display;
+  font-weight: bold;
+  font-size: 12px;
+  text-decoration: none;
+  font-style: italic;
+}
+
+.hero2_text2 h1{
+  margin: 0px 0px 0px 0px;
+  font-family: 'Roboto',sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.shopNow2{
+  margin: 20px;
+  border-width: 0px;
+  font-family: 'Playfair',Display;
+  padding: 8px 20px;
+  border-radius: 15px;
+  background-color: black;
+  color: white;
+  font-style: italic;
+}
+
+.hero2_image{
+  position: absolute;
+  display: flex;
+  width: -webkit-fill-available;
+}
+.hero-mobile{
+  display: flex;
+  padding-top: 85px;
+  margin: auto;
+}
+/* hero para mobil 360x640 FIN*/
+
+
+
 .creams_text{
    padding-top: 55px;
    width: 170px;
