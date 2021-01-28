@@ -278,8 +278,10 @@ display: flex;
 }
 .hero-mobile{
   display: flex;
-  padding-top: 85px;
+  padding-top: 144px;
   margin: auto;
+  justify-content: center;
+    align-items: center;
 }
 /* hero para mobil 360x640 FIN*/
 
