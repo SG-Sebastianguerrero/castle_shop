@@ -213,8 +213,6 @@ display: flex;
 .container{
   padding-top: 80px;
   padding-right: 200px;
-  flex-direction: column;
-  align-items: center;
 }
 
 /* Hero para escritorio FIN*/
@@ -287,14 +285,9 @@ display: flex;
 }
 /* hero para mobil 360x640 FIN*/
 
-.Creams{
-  display: flex;
-}
-
 .creams_text{
    padding-top: 55px;
    width: 170px;
-   align-items: center;
 }
 .creams_text h1,h5{
   margin: 0px 0px 0px 0px;
@@ -305,13 +298,11 @@ display: flex;
   text-decoration: none;
   font-style: italic;
   font-size: 50px;
-  align-items: center;
 }
 
 .creams_text h5{
     font-family: 'Playfair',Display;
     font-size: 14px;
-    align-items: center;
 }
 
 .creams_offer_imagen{
