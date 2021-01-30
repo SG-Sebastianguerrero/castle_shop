@@ -1,4 +1,11 @@
-•	Breakpoints  [Mobile: 320px 480px; Tablets: 768px 1024px; Desktop screen: más de 1200px]
+FUNCIONES:
+- Sebastián -> header
+- Cristian -> footer (los 3 footer)
+- Rodrigo -> hero y natural beauty
+- Luis Fdo. -> trending products, special products, latest news
+
+CONFIGURACIÓN BASE:
+•	Breakpoints  [Mobile: 360px 640px; Tablets: 768px 1024px; Desktop screen: más de 1200px]
    Usaremos .gitignore
 gitignore.io - Create Useful .gitignore Files For Your Project (toptal.com)
 github/gitignore: A collection of useful .gitignore templates

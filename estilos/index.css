@@ -1,85 +1,165 @@
 
 *{
   margin: 0;
+  padding: 0;
 }
-
+.html{
+  height: 360px;
+  width: 640px;
+}
 :root{
   --black:  #171717;
   --green:  #64986a;
   --grey:   #4F4F4F;
   --white:  #FFFFFF;
-  --pink:   #DDA197;
+/*  --pink:   #DDA197;*/
+  --pink:   #dea9a1;
+  --pink2:  #f28b8c;
   --black2: #191919;
 }
 
-
+/* INICIO barra de control header */
 .header{
-  z-index: 100;
-  background-color: var(--black2);
   position: fixed;
-  height: 80px;
   width: 100%;
-  padding: 0%;
-  margin: 0%;
-  display: flex;
+  height: 85px;
+  background-color: var(--black2);
+  z-index: 200;
   align-items: center;
   display: flex;
   justify-content: space-around;
+}
 
+.header a{
+  display: flex;
 }
 
 .header_barLogo{
-  width: 15%;
+  width: 150px;
   padding-right: 0px;
   padding-left: 0px;
-
 }
+
+/*Animacion menu */
+.menu{
+  display: flex;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.menu .linea {
+  z-index: 1100;
+  position: absolute;
+  width: 40px;
+  height: 4px;
+  background: var(--white);
+  border-radius: 10px;
+  transition: all .2s;
+}
+
+.header .menu .linea1{top:30%;}
+.header .menu .linea2{top:50%;}
+.header .menu .linea3{top:70%;}
+
+.menu.close .linea1{
+  transform: rotate(45deg);
+  top: 50%;
+}
+.menu.close .linea2{
+  transform: rotate(45deg);
+  top: 50%;
+}
+.menu.close .linea3{
+  transform: rotate(-45deg);
+  top: 50%;
+}
+/*Fin animacion*/
 
 .body{
   margin: 0px;
   padding: 0px;
 }
 
-.header_barText{
-  display: flex;
-  color: var(--grey);
-  white-space: break-spaces;
+.header_barText ul, li {
+  color: var(--white);
+  /*white-space: break-spaces;*/
 }
+.header_barText li{
+  border-bottom: 2px solid var(--white);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.header_barText{
+z-index: 1000;
+position: absolute;
+background: var(--black2);
+width: 100%;
+height: 100vh;
+top: 0;
+display: flex;
+justify-content: center;
+-ms-align-items:center;
+align-items: center;
+}
+
 .link{
+  padding-left: 5px;
+  padding-right: 5px;
   font-family: 'Playfair',Display;
   font-weight: bold;
   font-size: 14px;
   text-decoration: none;
-  font-style: italic; cursiva
+  font-style: italic;
   height: inherit;
   color: var(--white);
 }
 
-.header_barText{
+
+ul{
+    /*display: none;*/
     list-style: none;
+    padding: 0;
 }
 
-.icons-search, .icons-user, .icons-shoppingcar{
+a{
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.icons_search, .icons_user, .icons_shoppingCar{
   width: 15px;
   margin-right:  10px;
   margin-left:  10px;
 }
+
 .barIcons{
-    padding: 10px;
+display: flex;
+list-style: none;
+display: flex;
+align-items: center;
 }
-.hero-image{
-  padding-top: 80px;
-  width: 1000px;
+/* barra de control header FIN */
+
+/* INICIO Hero para escritorio */
+
+.hero{
+display: none;
+}
+
+.hero_image{
+  padding-top: 75px;
   display: flex;
-  position: absolute;
+  width: -webkit-fill-available;
+  /*position: absolute;*/
 }
-.hero-text{
-  margin: 10px 0px 10px 0px;
-  position: relative;
-  padding-top: 200px;
-  left: 650px;
+
+.hero_text{
+display: flex;
 }
-.hero-text h5{
+.hero_text h5{
   font-family: 'Roboto',sans-serif;
   font-weight: bold;
   margin: 0px 0px 0px 0px;
@@ -89,15 +169,15 @@
   left: -90px;
   text-align: justify;
   margin-top: 77px;
-  position: absolute;
+  /*position: absolute;*/
 }
 
-.hero-text2{
+.hero_text2{
   border-left: 2px solid var(--grey);
   padding-left: 15px;
 }
 
-.hero-text2 h3{
+.hero_text2 h3{
   margin: 0px 0px 0px 0px;
   font-family: 'Playfair',Display;
   font-weight: bold;
@@ -106,13 +186,14 @@
   font-style: italic;
 }
 
-.hero-text2 h1{
+.hero_text2 h1{
   margin: 0px 0px 0px 0px;
   font-family: 'Roboto',sans-serif;
   font-weight: bold;
   font-size: 60px;
 }
-.shop_now{
+
+.shopNow{
   margin: 20px;
   border-width: 0px;
   font-family: 'Playfair',Display;
@@ -125,27 +206,95 @@
 
 
 .hero{
-    height: 525px;
     background-color: var(--pink);
-    display: flex;
+    width: 100%;
 }
 
 .container{
   padding-top: 80px;
-  padding-left: 200px;
   padding-right: 200px;
+}
+
+/* Hero para escritorio FIN*/
+
+/* INICIO hero para mobil 360x640*/
+
+.hero2_textContainer{
   display: flex;
+  position: relative;
+  z-index: 100;
+}
+
+.hero2_text h5{
+  width: 40px;
+  font-family: 'Roboto',sans-serif;
+  font-weight: bold;
+  margin: 0;
+  font-size: 4px;
+  letter-spacing: 1em;
+  transform: rotate(-90deg);
+}
+
+.hero2_text{
+  display: flex;
+  align-items: center;
+}
+.hero2_text2{
+  border-left: 2px solid var(--grey);
+  padding-left: 15px;
+}
+
+.hero2_text2 h3{
+  margin: 0px 0px 0px 0px;
+  font-family: 'Playfair',Display;
+  font-weight: bold;
+  font-size: 12px;
+  text-decoration: none;
+  font-style: italic;
+}
+
+.hero2_text2 h1{
+  margin: 0px 0px 0px 0px;
+  font-family: 'Roboto',sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.shopNow2{
+  margin: 20px;
+  border-width: 0px;
+  font-family: 'Playfair',Display;
+  padding: 8px 20px;
+  border-radius: 15px;
+  background-color: black;
+  color: white;
+  font-style: italic;
+}
+
+.hero2_image{
   position: absolute;
+  display: flex;
+  width: -webkit-fill-available;
 }
-.creams-text{
+.hero-mobile{
+  display: flex;
+  padding-top: 144px;
+  margin: auto;
+  justify-content: center;
+    align-items: center;
+}
+/* hero para mobil 360x640 FIN*/
+
+
+
+.creams_text{
    padding-top: 55px;
-   padding-right: 40px;
-    width: 170px;
+   width: 170px;
 }
-.creams-text h1, h2,h3,h4,h5{
+.creams_text h1, h2,h3,h4,h5{
   margin: 0px 0px 0px 0px;
 }
-.creams-text h1{
+.creams_text h1{
   font-family: 'Playfair',Display;
   font-weight: bold;
   text-decoration: none;
@@ -153,16 +302,16 @@
   font-size: 50px;
 }
 
-.creams-text h5{
+.creams_text h5{
     font-family: 'Playfair',Display;
     font-size: 14px;
 }
 
-.creams-offer-imagen{
+.creams_offer_imagen{
   width: 200px;
 }
 
-.shop_now-creams{
+.shopNow_creams{
   margin-top: 20px;
   border-width: 0px;
   font-family: 'Playfair',Display;
@@ -172,19 +321,15 @@
   color: white;
   font-style: italic;
 }
-.creams-product-1{
+.creams_product_1{
   padding-top: 70px;
   padding-left: 30px;
 }
-.creams-product-2{
+.creams_product_2{
   margin: 0px;
   padding-top: 325px;
-  padding-left: 380px;;
   position: relative;
 }
-.creams-offer-product2{
+.creams_offer_product2{
       width: 230px;
-}
-.creams-offer-product1{
-  width: 300px;
 }
