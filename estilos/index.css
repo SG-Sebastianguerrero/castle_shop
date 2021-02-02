@@ -333,3 +333,19 @@ display: flex;
 .creams_offer_product2{
       width: 230px;
 }
+
+.footer section{
+  height: 100px;
+}
+
+.footer .footer__services{
+  background: var(--green);
+}
+
+.footer .footer__info{
+  background: var(--black);
+}
+
+.footer .footer__bottom{
+  background: var(--grey);
+}
