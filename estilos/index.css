@@ -334,12 +334,38 @@ display: flex;
       width: 230px;
 }
 
+.footer{
+  color: var(--white);
+}
+
 .footer section{
-  height: 100px;
+  min-height: 45px;
 }
 
 .footer .footer__services{
   background: var(--green);
+}
+
+.footer .services{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer__services .service{
+  width: 24.63vw;
+  text-align: center;
+  border-right: solid 1px white;
+  border-bottom: solid 1px white;
+}
+
+.footer__services .service h2{
+  font-family: 'Playfair', Display;
+  font-style: italic;  
+}
+
+.footer__services .service h3{
+  font-family: 'Playfair', Display;
+  font-weight: lighter;  
 }
 
 .footer .footer__info{
@@ -347,5 +373,11 @@ display: flex;
 }
 
 .footer .footer__bottom{
-  background: var(--grey);
+  background: var(--black2);
+}
+
+@media (max-width: 360px){
+  .footer__services .service{
+    width: 100vw;
+  }
 }
