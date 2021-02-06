@@ -333,3 +333,33 @@ display: flex;
 .creams_offer_product2{
       width: 230px;
 }
+
+
+/*MEDIA QUERYS PARA PARA 360X640*/
+
+@media (min-width: 768px) {
+ .hero-mobile{
+   display: none;
+  }
+  .hero{
+    display: flex;
+  }
+
+ .header_barText{
+  width: auto;
+  height: 80px;
+  align-items: center;
+  display: flex;
+  color: white;
+  }
+  .menu{
+    display: none;
+  }
+  ul{
+    display: flex;
+  }
+  .link{
+    border-bottom: none;
+    padding: 0;
+  }
+}
