@@ -5,6 +5,7 @@ var mediaqueryList = window.matchMedia("(min-width: 768px)");
 if(mediaqueryList.matches) {
   $(document).ready( function(){
   $('.header_barText').show();
+  $('.menu').toggleClass('close');
   });
   }
 
@@ -30,4 +31,4 @@ if(!mediaqueryList.matches){
 //  $('.menu').toggleClass('close');
 //  $('.header_barText').slideToggle();
 //  });}
-});
+//});
