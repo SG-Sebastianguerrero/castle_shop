@@ -215,6 +215,8 @@ display: flex;
   padding-right: 200px;
 }
 
+
+
 /* Hero para escritorio FIN*/
 
 /* INICIO hero para mobil 360x640*/
@@ -283,7 +285,7 @@ display: flex;
   justify-content: center;
     align-items: center;
 }
-
+@media(min-width: 360px){
 .hero3_textContainer {
   justify-content: center;
   text-align: center;
@@ -321,10 +323,8 @@ display: flex;
   width: 340px;
   margin: 10px;
 }
-
+}
 /* hero para mobil 360x640 FIN*/
-
-
 
 .creams_text{
    padding-top: 55px;
