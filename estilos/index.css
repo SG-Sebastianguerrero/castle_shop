@@ -20,6 +20,7 @@
 
 /* INICIO barra de control header */
 .header{
+  top: 0;
   position: fixed;
   width: 100%;
   height: 85px;
@@ -35,6 +36,7 @@
 }
 
 .header_barLogo{
+  padding-right: 200px;
   width: 150px;
   padding-right: 0px;
   padding-left: 0px;
@@ -150,26 +152,31 @@ display: none;
 }
 
 .hero_image{
-  padding-top: 75px;
+  top: 85px;
+  position: absolute;
   display: flex;
   width: -webkit-fill-available;
   /*position: absolute;*/
 }
 
-.hero_text{
-display: flex;
+.hero_textContainer{
+  position: relative;
+  justify-content: flex-end;
+  width: -webkit-fill-available;
+  display: flex;
 }
-.hero_text h5{
+
+.hero_text1 h5{
   font-family: 'Roboto',sans-serif;
   font-weight: bold;
-  margin: 0px 0px 0px 0px;
+
   font-size: 8px;
   letter-spacing: 1em;
   transform: rotate(-90deg);
-  left: -90px;
-  text-align: justify;
-  margin-top: 77px;
-  /*position: absolute;*/
+
+  display: flex;
+  width: 180px;
+  justify-content: flex-start;
 }
 
 .hero_text2{
@@ -194,6 +201,7 @@ display: flex;
 }
 
 .shopNow{
+  z-index: 100;
   margin: 20px;
   border-width: 0px;
   font-family: 'Playfair',Display;
@@ -207,15 +215,10 @@ display: flex;
 
 .hero{
     background-color: var(--pink);
-    width: 100%;
+    width: -webkit-fill-available;
+    padding-top: 118px;
+    align-items: center;
 }
-
-.container{
-  padding-top: 80px;
-  padding-right: 200px;
-}
-
-
 
 /* Hero para escritorio FIN*/
 
@@ -227,6 +230,11 @@ display: flex;
   z-index: 100;
 }
 
+.hero2_text{
+  justify-content: center;
+  height: 130px;
+  display: block;
+}
 .hero2_text h5{
   width: 40px;
   font-family: 'Roboto',sans-serif;
@@ -238,7 +246,6 @@ display: flex;
 }
 
 .hero2_text{
-  display: flex;
   align-items: center;
 }
 .hero2_text2{
@@ -263,6 +270,7 @@ display: flex;
 }
 
 .shopNow2{
+  z-index: 100;
   margin: 20px;
   border-width: 0px;
   font-family: 'Playfair',Display;
@@ -274,6 +282,7 @@ display: flex;
 }
 
 .hero2_image{
+  top: 85px;
   position: absolute;
   display: flex;
   width: -webkit-fill-available;
@@ -282,53 +291,17 @@ display: flex;
   display: flex;
   padding-top: 144px;
   margin: auto;
-  justify-content: center;
-    align-items: center;
-}
-@media(min-width: 360px){
-.hero3_textContainer {
-  justify-content: center;
-  text-align: center;
-  margin-top: 100px;
-}
-
-.hero3_textContainer h5 {
-  font-family: sans-serif;
-  font-size: 14px;
-  letter-spacing: 0.5px;
-  font-weight: 500;
-}
-
-.hero3_textContainer h1 {
-  font-family: 'Playfair',Display;
-  font-weight: bold;
-  text-decoration: none;
-  font-style: italic;
-  font-size: 30px;
-  margin-top: 5px;
-}
-
-.shopNow3 {
-  margin: 5px;
-  border-width: 0px;
-  font-family: sans-serif;
-  padding: 10px 15px;
-  border-radius: 20px;
-  background-color: black;
-  color: white;
-  letter-spacing: 1px;
-}
-
-.hero3_image {
-  width: 340px;
-  margin: 10px;
-}
+  justify-content: flex-start;
+  align-items: center;
 }
 /* hero para mobil 360x640 FIN*/
 
+
+
 .creams_text{
-   padding-top: 55px;
-   width: 170px;
+   padding-top: 80px;
+   text-align: center;
+   padding-bottom: 20px;
 }
 .creams_text h1, h2,h3,h4,h5{
   margin: 0px 0px 0px 0px;
@@ -347,7 +320,12 @@ display: flex;
 }
 
 .creams_offer_imagen{
-  width: 200px;
+  width: 320px;
+}
+
+.creams_offer{
+    justify-content: center;
+    display: flex;
 }
 
 .shopNow_creams{
@@ -360,19 +338,47 @@ display: flex;
   color: white;
   font-style: italic;
 }
-.creams_product_1{
-  padding-top: 70px;
-  padding-left: 30px;
+.creams_product_1, .creams_product_2{
+  display: flex;
+  justify-content: center;
 }
-.creams_product_2{
-  margin: 0px;
-  padding-top: 325px;
-  position: relative;
-}
+
 .creams_offer_product2{
       width: 230px;
 }
 
+.creams_offer_product1, .creams_offer_product2{
+  width: 320px;
+}
+
+/*MEDIA QUERYS PARA PARA 360X640*/
+
+@media (min-width: 768px) {
+ .hero-mobile{
+   display: none;
+  }
+  .hero{
+    display: flex;
+  }
+
+ .header_barText{
+  width: auto;
+  height: 80px;
+  align-items: center;
+  display: flex;
+  color: white;
+  }
+  .menu{
+    display: none;
+  }
+  ul{
+    display: flex;
+  }
+  .header_barText li{
+    border-bottom: none;
+    padding: 10px;
+  }
+}
 
 /*MEDIA QUERYS PARA PARA 360X640*/
 
@@ -400,5 +406,11 @@ display: flex;
   .link{
     border-bottom: none;
     padding: 0;
+  }
+
+  .figure{
+    justify-content: center;
+    display: flex;
+    padding-top: 20px;
   }
 }
