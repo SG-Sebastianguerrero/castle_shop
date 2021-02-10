@@ -159,6 +159,8 @@ display: none;
 }
 
 .hero_textContainer{
+  padding-right: 10%;
+  padding-top: 10%;
   position: relative;
   justify-content: flex-end;
   width: -webkit-fill-available;
@@ -177,8 +179,10 @@ display: none;
   justify-content: flex-start;
 }
 .hero_text1{
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
+    width: 165px;
+    margin-right: -75px;
 }
 
 .hero_text2{
@@ -233,10 +237,13 @@ display: none;
 }
 
 .hero2_text{
-  justify-content: center;
+  /* justify-content: center;
   height: 130px;
   position: relative;
+  display: flex; */
+  width: 50px;
   display: flex;
+  align-items: center;
 }
 .hero2_text h5{
   font-family: 'Roboto',sans-serif;
@@ -291,7 +298,8 @@ display: none;
 }
 .hero-mobile{
   display: flex;
-  padding-top: 144px;
+  padding-top: 35%;
+  padding-bottom: 20%;
   margin: auto;
   justify-content: flex-start;
   align-items: center;
