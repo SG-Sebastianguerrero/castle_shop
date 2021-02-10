@@ -36,7 +36,6 @@
 }
 
 .header_barLogo{
-  padding-right: 200px;
   width: 150px;
   padding-right: 0px;
   padding-left: 0px;
@@ -164,19 +163,22 @@ display: none;
   justify-content: flex-end;
   width: -webkit-fill-available;
   display: flex;
+  height: auto;
+  padding: inherit;
 }
 
 .hero_text1 h5{
   font-family: 'Roboto',sans-serif;
   font-weight: bold;
-
   font-size: 8px;
   letter-spacing: 1em;
   transform: rotate(-90deg);
-
   display: flex;
-  width: 180px;
   justify-content: flex-start;
+}
+.hero_text1{
+  display: flex;
+  align-items: center;
 }
 
 .hero_text2{
@@ -233,10 +235,10 @@ display: none;
 .hero2_text{
   justify-content: center;
   height: 130px;
-  display: block;
+  position: relative;
+  display: flex;
 }
 .hero2_text h5{
-  width: 40px;
   font-family: 'Roboto',sans-serif;
   font-weight: bold;
   margin: 0;
