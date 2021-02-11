@@ -346,24 +346,24 @@ display: flex;
   background: var(--green);
 }
 
-.footer .services{
+.footer .footer_row{
   display: flex;
   flex-wrap: wrap;
 }
 
-.footer__services .service{
+.footer .footer_column{
   width: 24.63vw;
   text-align: center;
   border-right: solid 1px white;
   border-bottom: solid 1px white;
 }
 
-.footer__services .service h2{
+.footer .footer_column h2{
   font-family: 'Playfair', Display;
   font-style: italic;  
 }
 
-.footer__services .service h3{
+.footer .footer_column h3{
   font-family: 'Playfair', Display;
   font-weight: lighter;  
 }
@@ -377,7 +377,7 @@ display: flex;
 }
 
 @media (max-width: 360px){
-  .footer__services .service{
+  .footer .footer_column{
     width: 100vw;
   }
 }
