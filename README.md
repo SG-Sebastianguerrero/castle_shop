@@ -6,6 +6,7 @@ FUNCIONES:
 - Luis Fdo. -> trending products, special products, latest news
 - Adriana -> Shoping section
 - Santiago -> Natural beauty & latest news
+- Yeliana -> Sidebar
 
 CONFIGURACIÓN BASE:
 • Breakpoints [Mobile: 360px 640px; Tablets: 768px 1024px; Desktop screen: más de 1200px]
