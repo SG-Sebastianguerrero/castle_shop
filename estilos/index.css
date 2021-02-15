@@ -473,3 +473,57 @@ display: none;
     bottom: 40px;
 }
   }
+  @media (max-width: 767px) {
+    .latest_newsContainer {
+      margin-bottom: 25px;
+    }
+    .latest_newsContainer h2 {
+      font-size: 24px;
+      font-family: 'Playfair', Display;
+      font-weight: 700;
+      font-style: italic;
+      text-align: center;
+      margin: 0 0 20px;
+      padding: 0 0 30px;
+      width: 100%;
+      background: url('../imagenes/laurel.png') no-repeat bottom center;      
+    }
+    .Imagenews_container {
+      padding: 0 15px;
+      margin: 0 auto;
+    }
+    .Imagenews_container img {
+      max-width: 100%;
+      width: 100%;
+    }
+    .description_container {
+      padding: 15px 15px 0;
+      text-align: center;
+
+    }
+    .description_title {
+      font-size: 18px;
+      font-family: 'Playfair', Display;
+      text-transform: capitalize;
+      font-weight: 600;
+      font-style: italic;
+      margin-bottom: 5px;
+      color: #222;
+    }
+    .description {
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 500;
+      color: #666;
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+    .Read_more {
+      text-transform: capitalize;
+      text-decoration: none;
+      color: #555;
+      font-size: 14px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+  }
