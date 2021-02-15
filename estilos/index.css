@@ -338,12 +338,23 @@ display: flex;
   color: var(--white);
 }
 
+
+.footer ul{
+  display: block;
+}
+
 .footer section{
   min-height: 45px;
 }
 
 .footer .footer__services{
   background: var(--green);
+  display: flex;
+  justify-content: center;
+}
+
+.footer-section_wrapper{
+  width: 75%;
 }
 
 .footer .footer_row{
@@ -352,7 +363,7 @@ display: flex;
 }
 
 .footer .footer_column{
-  width: 24.63vw;
+  width: 18.4vw;
   text-align: center;
   border-right: solid 1px white;
   border-bottom: solid 1px white;
@@ -370,6 +381,8 @@ display: flex;
 
 .footer .footer__info{
   background: var(--black);
+  display: flex;
+  justify-content: center;
 }
 
 .footer .footer__bottom{
@@ -378,6 +391,9 @@ display: flex;
 
 @media (max-width: 360px){
   .footer .footer_column{
+    width: 100vw;
+  }
+  .footer-section_wrapper{
     width: 100vw;
   }
 }
