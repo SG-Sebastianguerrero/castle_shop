@@ -11,6 +11,7 @@
   --black:  #171717;
   --green:  #64986a;
   --grey:   #4F4F4F;
+  --grey2:  #B4B4B7;
   --white:  #FFFFFF;
 /*  --pink:   #DDA197;*/
   --pink:   #dea9a1;
@@ -354,7 +355,7 @@ display: flex;
 }
 
 .footer-section_wrapper{
-  width: 75%;
+  /* width: 80%; */
 }
 
 .footer .footer_row{
@@ -363,20 +364,67 @@ display: flex;
 }
 
 .footer .footer_column{
+  padding: 1.5em 0;
   width: 18.4vw;
-  text-align: center;
-  border-right: solid 1px white;
-  border-bottom: solid 1px white;
+}
+
+.footer__bottom .footer_column{
+  padding: 1em 0;
+  width: auto;
+}
+
+.footer__services .footer_column{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border-right: solid 1px white;
+  border-bottom: solid 1px white; */
 }
 
 .footer .footer_column h2{
   font-family: 'Playfair', Display;
-  font-style: italic;  
+  font-style: italic;
+  font-size: 1.25em;
 }
 
 .footer .footer_column h3{
   font-family: 'Playfair', Display;
-  font-weight: lighter;  
+  font-weight: lighter;
+  font-size: 1.1em;
+}
+
+.footer .footer_column ul li, p{
+  margin: 0.7em 0;
+  color: var(--grey2);
+  font-size: 0.82em;
+}
+
+.footer .footer-icon{
+  height: 42px;
+  width: 50px;
+  margin-bottom: 0.5em ;
+}
+
+.footer .ship{
+  background-image: url('../imagenes/ship.svg');
+}
+
+.footer .user{
+  background-image: url('../imagenes/user.svg');
+  height: 42px;
+  width: 42px;
+}
+
+.footer .piggy-bank{
+  background-image: url('../imagenes/piggyBank.svg');
+  height: 42px;
+  width: 42px;
+}
+
+.footer .card{
+  background-image: url('../imagenes/card.svg');
+  height: 42px;
+  width: 48px;
 }
 
 .footer .footer__info{
@@ -395,6 +443,13 @@ display: flex;
   }
   .footer-section_wrapper{
     width: 100vw;
+  }
+  
+  .footer .footer_column{
+    padding: 1.3em 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
   }
 }
 
