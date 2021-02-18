@@ -1,4 +1,4 @@
-  function animation_close(){
+  function animation_close() {
     $('.animation').hide();
   }
-    window.setTimeout(animation_close, 5000);
+  window.setTimeout(animation_close, 5000);
