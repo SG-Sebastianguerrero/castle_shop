@@ -474,6 +474,9 @@ display: none;
 }
   }
   @media (max-width: 767px) {
+    .latest_newsContainer2 {
+      display: none;
+    }
     .latest_newsContainer {
       margin-bottom: 25px;
     }
@@ -533,5 +536,72 @@ display: none;
     }
     .figure-wrapper__item {
       padding-bottom: 15px ;
+    }
+  }
+  @media (min-width: 768px) {
+    .latest_newsContainer {
+      display: none;
+    }
+    .New_products {
+      display: flex;
+    }
+    .latest_newsContainer2{
+      margin-bottom: 25px;
+    }
+    .latest_newstitle {
+      font-size: 34px;
+      font-family: 'Playfair', Display;
+      font-weight: 700;
+      font-style: italic;
+      text-align: center;
+      margin: 0 0 20px;
+      padding: 0 0 30px;
+      width: 100%;
+      background: url('../imagenes/laurel.png') no-repeat bottom center;      
+    }
+    .Imagenews_container2 {
+      padding: 0 15px;
+    }
+    .Imagenews_container2 img {
+      max-width: 100%;
+      width: 100%;
+    }
+    .description_container2 {
+      padding: 15px 15px 0;
+      text-align: center;
+    }
+    .description_title2 {
+      font-size: 18px;
+      font-family: 'Playfair', Display;
+      text-transform: capitalize;
+      font-weight: 600;
+      font-style: italic;
+      margin-bottom: 5px;
+      color: #222;
+    }
+    .description2 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 500;
+      color: #666;
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+    .Read_more2 {
+      text-transform: capitalize;
+      text-decoration: none;
+      color: #555;
+      font-size: 14px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+    .figure-wrapper2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    width: 100%;
+    }
+    .figure-wrapper__item2 {
+      padding: 0 5px;
     }
   }
