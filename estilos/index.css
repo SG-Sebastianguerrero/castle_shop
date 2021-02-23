@@ -551,6 +551,9 @@ display: none;
     .figure-wrapper__item {
       padding-bottom: 15px ;
     }
+    .figure-wrapper3 {
+      display: none;
+    }
   }
   @media (min-width: 768px) {
     .latest_newsContainer {
@@ -620,6 +623,9 @@ display: none;
     }
     .figure-wrapper__item2 {
       padding: 0 5px;
+    }
+    .figure-wrapper3 {
+      display: none;
     }
   }
   @media (min-width: 1024px) {
@@ -699,4 +705,13 @@ display: none;
       bottom: -80px;
       left: -90px;
   }
-}
+  .figure-wrapper2 {
+    display: none;
+  }
+  .figure-wrapper3 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 25px;
+    width: 100%;
+    }
+  }
