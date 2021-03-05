@@ -8,7 +8,8 @@ if(mediaqueryList.matches) {
   $('.menu').toggleClass('close');
   });
   }
-
+  window.
+  
 if(!mediaqueryList.matches){
  $(document).ready( function(){
   $('.header_barText').hide();
