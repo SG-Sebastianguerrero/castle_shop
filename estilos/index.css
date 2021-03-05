@@ -26,15 +26,15 @@
   height: 360px;
   width: 640px;
 }
-
-:root {
-  --black: #171717;
-  --green: #64986a;
-  --grey: #4F4F4F;
-  --white: #FFFFFF;
-  /*  --pink:   #DDA197;*/
-  --pink: #dea9a1;
-  --pink2: #f28b8c;
+:root{
+  --black:  #171717;
+  --green:  #64986a;
+  --grey:   #4F4F4F;
+  --grey2:  #B4B4B7;
+  --white:  #FFFFFF;
+/*  --pink:   #DDA197;*/
+  --pink:   #dea9a1;
+  --pink2:  #f28b8c;
   --black2: #191919;
 }
 
