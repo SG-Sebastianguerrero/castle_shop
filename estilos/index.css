@@ -1,4 +1,4 @@
-* {
+*{
   margin: 0;
   padding: 0;
 }
@@ -113,7 +113,7 @@
   padding: 0px;
 }
 
-.header_barText ul, li {
+.header_barText ul, .header_barText li {
   color: var(--white);
   /*white-space: break-spaces;*/
 }
@@ -205,8 +205,8 @@ a {
   height: auto;
 }
 
-.hero_text1 h5 {
-  font-family: 'Roboto', sans-serif;
+.hero_text1 h5{
+  font-family: 'Poppins',sans-serif;
   font-weight: bold;
   font-size: 8px;
   letter-spacing: 1em;
@@ -238,7 +238,7 @@ a {
 
 .hero_text2 h1 {
   margin: 0px 0px 0px 0px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins',sans-serif;
   font-weight: bold;
   font-size: 60px;
 }
@@ -280,9 +280,8 @@ a {
   display: flex;
   align-items: center;
 }
-
-.hero2_text h5 {
-  font-family: 'Roboto', sans-serif;
+.hero2_text h5{
+  font-family: 'Poppins',sans-serif;
   font-weight: bold;
   margin: 0;
   font-size: 4px;
@@ -310,7 +309,7 @@ a {
 
 .hero2_text2 h1 {
   margin: 0px 0px 0px 0px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins',sans-serif;
   font-weight: bold;
   font-size: 30px;
 }
