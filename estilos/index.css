@@ -377,6 +377,7 @@ a {
 
   .creams_offer_imagen2 {
     width: -webkit-fill-available;
+    text-align-last: center;
     margin: 20px;
     margin-top: 5px;
     display: flex;
@@ -384,6 +385,7 @@ a {
 
   .shopNow_creams2 {
     margin-top: 10px;
+    
     border-width: 0px;
     font-family: 'Arial', Display;
     padding: 10px 20px;
